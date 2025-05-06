@@ -1,7 +1,12 @@
 # whiteList
 /*
 /**/probe/**
+/.minecraft/**
 !/.minecraft
+
+# blackList
+/**/saves
+/**/screenshots
 
 # github
 !/.github/
@@ -14,18 +19,28 @@
 ## config只应手动添加更改的文件
 #!/.minecraft/config/
 #!/.minecraft/config/**
+#!/.minecraft/defaultconfigs/
+#!/.minecraft/defaultconfigs/**
 
 # kubejs
 !/.minecraft/kubejs/
+!/.minecraft/kubejs/assets/
 !/.minecraft/kubejs/assets/**
+!/.minecraft/kubejs/client_scripts/
 !/.minecraft/kubejs/client_scripts/**
+!/.minecraft/kubejs/server_scripts/
 !/.minecraft/kubejs/server_scripts/**
+!/.minecraft/kubejs/startup_scripts/
 !/.minecraft/kubejs/startup_scripts/**
+!/.minecraft/kubejs/data/
+!/.minecraft/kubejs/data/**
 **/example*.*
 
 # mod
 *.jar
-!/**/*.pw.toml
+!/.minecraft/mods
+!/.minecraft/mods/.index/
+!/.minecraft/mods/.index/*.pw.toml
 
 # file
 !/.minecraft/eslint.config.js
@@ -34,3 +49,6 @@
 !/manifest.json
 !/README.md
 !/LICENSE
+!/.packignore
+!/instance.cfg
+!/mmc-pack.json
