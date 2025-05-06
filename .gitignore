@@ -1,8 +1,6 @@
 # whiteList
-/*
+/**
 /**/probe/**
-/.minecraft/**
-!/.minecraft
 
 # blackList
 /**/saves
@@ -13,40 +11,41 @@
 !/.github/**
 
 # vscode
-!/.minecraft/.vscode/
-!/.minecraft/.vscode/settings.json
+!/.vscode/
+!/.vscode/settings.json
 
 ## config只应手动添加更改的文件
-#!/.minecraft/config/
-#!/.minecraft/config/**
-#!/.minecraft/defaultconfigs/
-#!/.minecraft/defaultconfigs/**
+#!/config/
+#!/config/**
+#!/defaultconfigs/
+#!/defaultconfigs/**
 
 # kubejs
-!/.minecraft/kubejs/
-!/.minecraft/kubejs/assets/
-!/.minecraft/kubejs/assets/**
-!/.minecraft/kubejs/client_scripts/
-!/.minecraft/kubejs/client_scripts/**
-!/.minecraft/kubejs/server_scripts/
-!/.minecraft/kubejs/server_scripts/**
-!/.minecraft/kubejs/startup_scripts/
-!/.minecraft/kubejs/startup_scripts/**
-!/.minecraft/kubejs/data/
-!/.minecraft/kubejs/data/**
+!/kubejs/
+!/kubejs/assets/
+!/kubejs/assets/**
+!/kubejs/client_scripts/
+!/kubejs/client_scripts/**
+!/kubejs/server_scripts/
+!/kubejs/server_scripts/**
+!/kubejs/startup_scripts/
+!/kubejs/startup_scripts/**
+!/kubejs/data/
+!/kubejs/data/**
 **/example*.*
 
 # mod
-*.jar
-!/.minecraft/mods
-!/.minecraft/mods/.index/
-!/.minecraft/mods/.index/*.pw.toml
+!/mods
+!/mods/*
+#!/mods/.index/
+#!/mods/.index/*.pw.toml
 
 # file
-!/.minecraft/eslint.config.js
-!/.minecraft/package.json
+!/eslint.config.js
+!/package.json
 !/.gitignore
 !/manifest.json
+!/modlist.html
 !/README.md
 !/LICENSE
 !/.packignore
