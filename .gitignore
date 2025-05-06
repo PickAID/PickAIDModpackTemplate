@@ -1,31 +1,35 @@
 # whiteList
 /*
 /**/probe/**
-!/minecraft
+!/.minecraft
 
 # github
 !/.github/
 !/.github/**
 
 # vscode
-!/minecraft/.vscode/
-!/minecraft/.vscode/settings.json
+!/.minecraft/.vscode/
+!/.minecraft/.vscode/settings.json
 
 ## config只应手动添加更改的文件
-#!config/
-#!config/**
+#!/.minecraft/config/
+#!/.minecraft/config/**
 
 # kubejs
-!/kubejs/
-!/kubejs/assets/**
-!/kubejs/client_scripts/**
-!/kubejs/server_scripts/**
-!/kubejs/startup_scripts/**
+!/.minecraft/kubejs/
+!/.minecraft/kubejs/assets/**
+!/.minecraft/kubejs/client_scripts/**
+!/.minecraft/kubejs/server_scripts/**
+!/.minecraft/kubejs/startup_scripts/**
 **/example*.*
 
+# mod
+*.jar
+!/**/*.pw.toml
+
 # file
-!/minecraft/eslint.config.js
-!/minecraft/package.json
+!/.minecraft/eslint.config.js
+!/.minecraft/package.json
 !/.gitignore
 !/manifest.json
 !/README.md
